@@ -1,9 +1,12 @@
 'use client'
 import React, { useState } from 'react';
 import { ChevronRight, ChevronLeft, User, BookOpen, Heart, Activity, Target, Brain, Users, Lightbulb } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 const CareerQuestionnaire = () => {
   const [currentSection, setCurrentSection] = useState(0);
+
+  const router = useRouter();
   const [formData, setFormData] = useState<any>({
     // Personal Information
     name: '',
@@ -116,6 +119,7 @@ const CareerQuestionnaire = () => {
 
   const handleSubmit = async () => {
     // Here you would send the data to your backend
+    router.push('/tertiary/recommed');
     console.log('Form Data:', formData);
     alert('Assessment submitted! Your career recommendations will be generated.');
   };
