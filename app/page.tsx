@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Nav />
       <div className="w-full px-4 sm:px-6 md:px-8 mt-4 flex justify-center">
-        <div className="w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl flex flex-col items-center justify-center py-8 sm:py-12 md:py-16 bg-white bg-opacity-90 rounded-2xl shadow-lg">
+        <div className="w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl flex flex-col items-center justify-center py-8 sm:py-12 md:py-16 bg-white bg-opacity-90 rounded-2xl ">
           <div className="flex items-center gap-2 font-bold text-3xl sm:text-4xl md:text-5xl mb-2 text-center">
             <div className="text-black font-bold">
               Welcome to Career{" "}
@@ -21,16 +21,16 @@ export default function Home() {
             Get personalized career advice and recommendations with CareerAI. Choose your level of education to get started today.
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8 w-full">
+          <div className="flex flex-row flex-wrap justify-center gap-2 mt-6 w-full">
             <Link
               href="/tertiary/primary"
-              className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors duration-200 text-base sm:text-lg font-medium text-center w-full sm:w-auto"
+              className="bg-black text-white px-3 py-1.5 rounded-md hover:bg-gray-800 transition-colors duration-200 text-sm font-medium text-center min-w-[120px]"
             >
               Primary School
             </Link>
             <Link
               href="/tertiary"
-              className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors duration-200 text-base sm:text-lg font-medium text-center w-full sm:w-auto"
+              className="bg-black text-white px-3 py-1.5 rounded-md hover:bg-gray-800 transition-colors duration-200 text-sm font-medium text-center min-w-[120px]"
             >
               Tertiary Level
             </Link>
