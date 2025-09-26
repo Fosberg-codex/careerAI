@@ -26,7 +26,7 @@ export default function Home() {
               href="/tertiary/primary"
               className="bg-black text-white px-3 py-1.5 rounded-md hover:bg-gray-800 transition-colors duration-200 text-sm font-medium text-center min-w-[120px]"
             >
-              Primary School
+              Senior High
             </Link>
             <Link
               href="/tertiary"
